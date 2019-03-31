@@ -99,6 +99,8 @@ social:
     url: mailto:cocosongying@gmail.com
   - icon: fab fa-github
     url: https://github.com/cocosongying
+  - icon: fab fa-weibo
+    url: https://weibo.com/cocosongying
   - icon: fas fa-rss
     url: /atom.xml
 footer: '一花一世界，一叶一追寻。一曲一场叹，一生为一人。'
@@ -128,6 +130,22 @@ widgets:
     body: '本站使用 [Material X](https://xaoxuu.com/wiki/material-x/) 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦，超喜欢的话还可以安利给身边的朋友哦～'
   - widget: category
   - widget: tagcloud
+  - widget: list
+    icon: fas fa-tools
+    title: 实用工具
+    rows:
+      - name: Carbon
+        desc: 线上代码图片
+        icon: fas fa-feather-alt
+        url: https://carbon.now.sh/
+      - name: Draw.io
+        desc: 线上流程图
+        icon: fas fa-feather-alt
+        url: https://www.draw.io/
+      - name: Markdown Plus
+        desc: 线上编辑器
+        icon: fas fa-feather-alt
+        url: https://mdp.tylingsoft.com/
   - widget: list
     icon: fas fa-medal
     title: 精选项目
@@ -166,11 +184,11 @@ live2d:
   enable: true
   scriptFrom: local
   model: 
-    use: live2d-widget-model-wanko #模型选择
+    use: live2d-widget-model-shizuku #模型选择
   display: 
     position: right  #模型位置
     width: 150       #模型宽度
-    height: 150      #模型高度
+    height: 220      #模型高度
   mobile: 
     show: false      #是否在手机端显示
 
