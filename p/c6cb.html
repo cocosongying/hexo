@@ -235,7 +235,11 @@
         var name = window.location.href.replace(".html","").split("/");
         a.download = 'cocosongying_' + name[name.length-1];
         a.href = url;
-        a.dispatchEvent(event);
+        //a.dispatchEvent(event);
+        a.dataset.downloadurl = ['image/png', a.download, a.href].join(':');
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       }
 
       document.getElementById('poster').onclick = function() {
@@ -273,14 +277,20 @@
           for (let i = 0; i < text.length; i++) {
             ctx.fillText(text[i], canvasWidth/ 2, 100 + i * 20);
           }
+
+          var imgSrc = c.toDataURL('image/png');
+          c.style.display="none";
+          var myImg = document.getElementById('myImg');
+          myImg.setAttribute('src', imgSrc);
         }
         return false;
       }
     </script>
   </div>
   <div id="myModal" class="modal" style="display: none;position: fixed;z-index: 1000;margin-left:-160px;margin-top:-280px;padding: 10px;left: 50%;top: 50%;width: 320px;height: 566px;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.9);">
-    <canvas id="myCanvas" width="298" height="480" style="border:1px solid #d3d3d3;">您的浏览器不支持 HTML5 canvas 标签。</canvas>
-    <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="downloadPoster('myCanvas')" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;float:left;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">保存</a><a href="javascript:void(0)" onclick="document.getElementById('myModal').style.display='none'" style="display:block;width:100px;float:right;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">取消</a></p>
+    <canvas id="myCanvas" width="298" height="480" style="border:1px solid #d3d3d3;margin-bottom: 12px;">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+    <img src id="myImg" width="298" height="480" style="border:1px solid #d3d3d3;margin-bottom: 12px;">
+    <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="document.getElementById('myModal').style.display='none'" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">关闭</a></p>
   </div>
 
 
