@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>2019-03-21 Sudoku | 磨叽熊猫</title>
+  <title>数独 (逻辑游戏) | 磨叽熊猫</title>
   
   
 
@@ -149,7 +149,7 @@
   <div class="meta" id="header-meta">
     
       
-          <h1 class="title">2019-03-21 Sudoku</h1>
+          <h1 class="title">数独 (逻辑游戏)</h1>
       
     
 
@@ -211,12 +211,79 @@
             <hr>
             <div class="new-meta-box">
               
-                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-31T23:56:36+08:00">
+                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-04-05T17:00:48+08:00">
                   <a class="notlink">
                     <i class="fas fa-save" aria-hidden="true"></i>
-                    2019-03-31
+                    2019-04-05
                   </a>
                 </div>
+              
+              
+                
+  <div class="new-meta-item meta-tags">
+    <a class="tag" href="javascript:void(0)" id="poster">
+      <i class="fas fa-camera" aria-hidden="true"></i>
+      海报
+    </a>
+    <script type="text/javascript">
+      function downloadPoster(selector) {
+        //var canvas = document.querySelector(selector);
+        var canvas = document.getElementById(selector);
+        var url = canvas.toDataURL('image/png')
+        var a = document.createElement('a')
+        var event = new MouseEvent('click')
+        var name = window.location.href.replace(".html","").split("/");
+        a.download = 'cocosongying_' + name[name.length-1];
+        a.href = url;
+        a.dispatchEvent(event);
+      }
+
+      document.getElementById('poster').onclick = function() {
+        var url = window.location.href;
+        document.getElementById('myModal').style.display = "block";
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        var img=new Image();
+        img.src="/hexo/img/post_bg_1.jpeg";
+        var qr=new Image();
+        qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACHUlEQVR42u3aQbKjMAwFwNz/0pkLfOBJcqYKu1mlkgBuFq8ki88nPr63x/0/k2tefbP4wMDAeC0jWWICyO+SrKH6+DAwME5gXF366j9Xv05C84pxvzYMDAyMVZ97S8TAwMCYB+794pKz7sMaAwMDo9rE5k3p2uBe3ItjYGC8kJG3l///80/mGxgYGK9ifItHNXwnI4fCqjAwMLZm5AGXDCCTmO61vtF6MDAwtmZMtvLzs5KYrp77qT45DAyMFzLyGJ28LraW9MeVMTAwDmDkgPvkzsec+XXuz8LAwDiHUagfx7vxvygoMTAw9mbkPWCvdEtitxruD104BgbGkYyc1Btb5hH8QMLAwNiUMW9WRxEZF6MPDwIDA2NrRq9A7PHm+GTzDgMDYz9GUoRVC7ik0KxupT1ENgYGxtaMJNp6w8VJBPdeSsPAwNiVkY8b81v2Nu/yFzgwMDBOY0yKxTwcq7xeoGNgYOzNmIwb8xHC5F7lkQAGBsamjF6bWsXkDXP5ahgYGEcyfrHRP1n0w/cYGBgHMJoFWbHh7DW05S02DAyMjRjf4rGqWa0OHpobbRgYGFswqjE3f/2r+lAmA04MDIydGL2QzdvX3vAyH4tiYGCcw8hfa1iFzIM72v7DwMDAiEvAJHwnw85ovoGBgXE8I98a6xV5zVEoBgbGAYzqq6WjWwaRXS4oMTAwtmb0XnHIy8FqyFaHnRgYGFsz/gGerEHP0CTlxwAAAABJRU5ErkJggg==';
+        
+        var title = '数独 (逻辑游戏)';
+        var desc = '分享一款数独游戏，数独是源自18世纪瑞士的一种数学游戏。是一种运用纸、笔进行演算的逻辑游戏。';
+        var fontSize = 20;
+        ctx.textAlign ='center'; //水平对齐
+        var canvasWidth = 298;
+        var canvasHeight = 480;
+        var textareaWidth = Math.ceil(canvasWidth/fontSize); //画布宽度除以字号
+        var text = [];//存放切割后的内容
+        while (desc.length > 0) {
+          text.push(desc.substr(0, textareaWidth ))
+          desc = desc.substr(textareaWidth, desc.length)
+        }
+
+        img.onload = function() {
+          ctx.drawImage(img,0,0,298,480);
+          ctx.drawImage(qr,100,360,100,100);
+
+          ctx.font="24px Arial";
+          ctx.fillText(title, canvasWidth/ 2, 50)
+
+          ctx.font="16px Arial";
+          //设置文本垂直居中
+          for (let i = 0; i < text.length; i++) {
+            ctx.fillText(text[i], canvasWidth/ 2, 100 + i * 20);
+          }
+        }
+        return false;
+      }
+    </script>
+  </div>
+  <div id="myModal" class="modal" style="display: none;position: fixed;z-index: 1000;margin-left:-160px;margin-top:-280px;padding: 10px;left: 50%;top: 50%;width: 320px;height: 566px;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.9);">
+    <canvas id="myCanvas" width="298" height="480" style="border:1px solid #d3d3d3;">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+    <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="downloadPoster('myCanvas')" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;float:left;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">保存</a><a href="javascript:void(0)" onclick="document.getElementById('myModal').style.display='none'" style="display:block;width:100px;float:right;padding:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">取消</a></p>
+  </div>
+
+
               
               
                 
@@ -270,7 +337,7 @@
 
 <script>
     window.subData = {
-        title: '2019-03-21 Sudoku',
+        title: '数独 (逻辑游戏)',
         tools: true
     }
 </script>
@@ -349,6 +416,33 @@
     
       
       
+        <section class="qrcode">
+  
+<header class="pure">
+  <div><i class="fas fa-qrcode fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;扫一扫手机浏览</div>
+  
+</header>
+
+  <div class="content pure">
+    <div id="qrcode" style="display:flex; justify-content:center;margin-bottom:10px;"></div>
+    <script type="text/javascript" src="/hexo/js/qrcode.min.js"></script>
+    <script type="text/javascript">
+      var url = window.location.href;
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width : 100,
+        height : 100
+      });
+      qrcode.makeCode(url);
+    </script>
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+      
         
   <section class="toc-wrapper">
     
@@ -381,33 +475,6 @@
   <div class="content pure">
     <p>本站使用 <a href="https://xaoxuu.com/wiki/material-x/">Material X</a> 作为主题，喜欢这个主题的朋友可以阅读文档进行安装哦，超喜欢的话还可以安利给身边的朋友哦～</p>
 
-  </div>
-</section>
-
-      
-    
-  
-    
-      
-      
-        <section class="qrcode">
-  
-<header class="pure">
-  <div><i class="fas fa-qrcode fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;二维码</div>
-  
-</header>
-
-  <div class="content pure">
-    <div id="qrcode" style="display:flex; justify-content:center;margin-bottom:10px;"></div>
-    <script type="text/javascript" src="/hexo/js/qrcode.min.js"></script>
-    <script type="text/javascript">
-      var url = window.location.href;
-      var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width : 100,
-        height : 100
-      });
-      qrcode.makeCode(url);
-    </script>
   </div>
 </section>
 
