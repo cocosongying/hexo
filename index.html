@@ -418,15 +418,17 @@
 </header>
 
   <div class="content pure">
-    <div id="qrcode" style="display:flex; justify-content:center;margin-bottom:10px;"></div>
-    <script type="text/javascript" src="/hexo/js/qrcode.min.js"></script>
+    <canvas id="qrcode" src style="width:100%; display:flex; justify-content:center;"></canvas>
     <script type="text/javascript">
       var url = window.location.href;
-      var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width : 100,
-        height : 100
-      });
-      qrcode.makeCode(url);
+      var c=document.getElementById("qrcode");
+      var ctx=c.getContext("2d");
+      var qr=new Image();
+      qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3aMZbCMAxFUfa/6UzLFDbvS0kR+aXiADG+KYQs6fPB1/V1rd7Zv99Z87ZLhgwZr2Vc2+uun1ytvP+U7E2GDBnnMFY/vPrO/of3KxMw35sMGTJkkNcEs3oQ/LUMGTJkPBdwSaq3/74MGTJk8EMsD6a8uJYG9BvO4jJkyHgho3OwfPr1I/0NGTJkvIpxhRdJE9NQXtvJv3VkyJAxmsEDHNlELckj65NEU4YMGbMZtUSw1iTgoxWkIHhDPitDhoyXMEiq1wHwQn9674//DRkyZIxg8GC3D3m1YYs0fVzeK0OGjNGMu8JrWqrrtAeW35EhQ8ZoRj8IdoIyfyces5AhQ8Y4Rpompi3J9JDM62kyZMiYzahtJT2ykkMsSQSXd8mQIeMYBl8iHedKC3Bp41OGDBmzGbW0j4dCPnKRDlvIkCHjHEYtRD7RnownRPaHWBkyZAxi8CNop9zGWwU8MV3muTJkyBjK6Bfr0xSw2Lsgq8mQIeMYBh/bqiV8fBQsTUZlyJAxlfF0yf6uB/SDLUOGjCMZZHO1xLFzcI3n2mTIkDGI0UnRCJU3R2vlORkyZExlXOGVpolpaK6lkjJkyJjNqAW7/hZ5SyC9V4YMGVMZvMTPi2skc0sfWfykZciQMY5RC5Rpw7LWikD/FTJkyJABhrR4GOVJYTBkJkOGDBm4zVlrGNQC9HLYQoYMGUMZ5BDLWwW1khy/V4YMGacx0qNjLU0kx10+2NHqb8iQIeNNjD/JuhkGNN90PgAAAABJRU5ErkJggg==';
+      qr.onload = function() {
+        ctx.drawImage(qr,100,0,100,100);
+      }
+      
     </script>
   </div>
 </section>

@@ -349,15 +349,17 @@
 </header>
 
   <div class="content pure">
-    <div id="qrcode" style="display:flex; justify-content:center;margin-bottom:10px;"></div>
-    <script type="text/javascript" src="/hexo/js/qrcode.min.js"></script>
+    <canvas id="qrcode" src style="width:100%; display:flex; justify-content:center;"></canvas>
     <script type="text/javascript">
       var url = window.location.href;
-      var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width : 100,
-        height : 100
-      });
-      qrcode.makeCode(url);
+      var c=document.getElementById("qrcode");
+      var ctx=c.getContext("2d");
+      var qr=new Image();
+      qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsUlEQVR42u3aQU7DQAwF0N7/0rBhgUSTftvjqkgvKxRCmheksfs9j0d8fP05fp+/uv7+/P3PV8dj48DDw8MbP/oV4+pjetcnV+b3v7wDHh4e3hqvuognj5Is6EmxGRUkPDw8vA/jJS1yciZ/WXh4eHj/kZcs1r1HyV8BHh4e3ifwkjCiWiTmr+CtWQseHh7ewhTpc35eme/h4eHhjafqvSg2v8/e9T9/hYeHh7fAyxfcasN6IH5tFQY8PDy8bV517FSNMHLw/fl78OVLxMPDw1vgTYKASbDbK0JJe30gR8HDw8MLRl+TZro3DEuKRx4oL8YQeHh4eBe8JDK4X6zz9jr5bXV71ouKh4eHh7fGmwcHk8A3uU91JIaHh4e3wasOopIP643EqkUlf3I8PDy8s7z5RqjJ2KwaapTjEjw8PLxlXj7uSsKI5CXmY7bqHZ58Y8DDw8M7xMvLw9nHrbbyo8/Fw8PDW+AlS3y1se6N/A+UgTwLwcPDw2vxqnFqHiJM4okkDi4003h4eHhHeXnjWx1H5Y9SvU91UIeHh4e3wctH+3nYmiz01ca9+ls8PDy8bV6+P6sQnsbXT4pEYU8ZHh4e3phXbaYnG6ryQVovEHlyPR4eHt4Cb7sw5PO3XjHIixMeHh7eBq+6QM+jijxcmJzBw8PD2+BNNgr0Xkc1HTkQ2uLh4eGt8apjrZyRvMTeC3rxj8HDw8N7C29SJHrbAnoxRPS0eHh4eEd5vZggeYh5EDwvRXh4eHgbvPzo4ZP8OGmye5u98PDw8PZ4861Oj0NHNaqICgMeHh7eGq+6manacO9VrRcNPR4eHt4H8JKled4u58364cKAh4eHt8bLG+t8/J/HGXnrj4eHh7fH622xmoysqg16b/sXHh4e3gav+oW/F0z0ysnKRgE8PDy8Pu8bnILaT2xI+98AAAAASUVORK5CYII=';
+      qr.onload = function() {
+        ctx.drawImage(qr,100,0,100,100);
+      }
+      
     </script>
   </div>
 </section>
