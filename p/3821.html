@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Archives: 2019 | 磨叽熊猫</title>
+  <title>博客个性化-打赏按钮 | 磨叽熊猫</title>
   
   
 
@@ -48,7 +48,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class="cover  half">
+    <cover class="cover post half">
       
         
   <a href="/hexo/"><h1 class="title">磨叽熊猫</h1></a>
@@ -191,28 +191,11 @@
   <div class="l_body">
     <div class='body-wrapper'>
       <div class="l_main">
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class="post-wrapper">
-            <article class="post reveal ">
   
+
+  
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class="meta">
@@ -221,11 +204,13 @@
     <div class="meta" id="header-meta">
       
         
-  <h2 class="title">
-    <a href="/hexo/p/3821.html">
-      博客个性化-打赏按钮
-    </a>
-  </h2>
+  
+    <h1 class="title">
+      <a href="/hexo/p/3821.html">
+        博客个性化-打赏按钮
+      </a>
+    </h1>
+  
 
 
       
@@ -272,6 +257,19 @@
         
           
             
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class="notlink">
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
 
           
         
@@ -288,365 +286,109 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>在博客页添加一个打赏按钮，点击打赏，弹出赞赏码，扫描赞赏码对博主进行打赏鼓励。</p>
-      
-        <div class="readmore">
-          <a href="/hexo/p/3821.html" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <p>在博客页添加一个打赏按钮，点击打赏，弹出赞赏码，扫描赞赏码对博主进行打赏鼓励。</p>
+<a id="more"></a>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>html 代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;! -- 添加捐赠图标 --&gt;</span><br><span class="line">&lt;div class =&quot;post-donate&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;donate_board&quot; class=&quot;donate_bar center&quot;&gt;</span><br><span class="line">        &lt;p style=&quot;margin:5px auto;&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;document.getElementById(&apos;donateModal&apos;).style.display = &apos;block&apos;&quot; style=&quot;display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;&quot;&gt;打赏&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">        &lt;br/&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div id=&quot;donateModal&quot; class=&quot;modal&quot; style=&quot;display: none;position: fixed;z-index: 1000;margin-left:-160px;margin-top:-200px;padding: 10px;left: 50%;top: 50%;width: 320px;height: 380px;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.6);&quot;&gt;</span><br><span class="line">        &lt;img src=&quot;https://cocosongying.github.io/img/wechatpay.jpeg&quot; id=&quot;myImg&quot; width=&quot;298&quot; height=&quot;298&quot; style=&quot;border:1px solid #d3d3d3;margin-bottom: 12px;&quot; /&gt;</span><br><span class="line">        &lt;p style=&quot;margin:5px auto;&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;document.getElementById(&apos;donateModal&apos;).style.display=&apos;none&apos;&quot; style=&quot;display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;&quot;&gt;关闭&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;! -- 添加捐赠图标 --&gt;</span><br></pre></td></tr></table></figure>
+<p>css 代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.donate_bar &#123;</span><br><span class="line">  text-align: center;</span><br><span class="line">  margin-top: 5%</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.donate_bar .donate_txt &#123;</span><br><span class="line">  display: block;</span><br><span class="line">  color: #9d9d9d;</span><br><span class="line">  font: 14px/2 &quot;Microsoft Yahei&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#donate_guide&#123;</span><br><span class="line">  height: 250px;</span><br><span class="line">  width: 250px;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#donate_guide img&#123;</span><br><span class="line">  height: 240px;</span><br><span class="line">  height: 240px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="赞赏码"><a href="#赞赏码" class="headerlink" title="赞赏码"></a>赞赏码</h2><p>如何获取赞赏码？</p>
+<p>微信可通过 支付 –&gt; 收付款 –&gt; 赞赏码 按照步骤开通并保存</p>
+<p>支付宝可通过 收钱 –&gt; 保存图片 直接得到收钱码</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>查看本文下方的赞赏码</p>
+
         </div>
+        
+          
+
+
+  <section class="meta" id="footer-meta">
+    <hr>
+    <div class="new-meta-box">
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/hexo/tags/个性化/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>个性化</p></a></div>
+
+
+        
       
     </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Hexo</a>
-        
-          <a href="/hexo/tags/个性化/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>个性化</a>
-        
-      </div>
-    
   </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <article class="post reveal ">
-  
-
-
-  <section class="meta">
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/hexo/p/489f.html">
-      博客个性化-一言
-    </a>
-  </h2>
-
-
-      
-      <div class="new-meta-box">
-        
-          
-        
-          
-            
-  <div class="new-meta-item author">
-    <a href="https://cocosongying.github.io/hexo" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>cocosongying</p>
-    </a>
-  </div>
 
 
           
-        
-          
-            <div class="new-meta-item date">
-  <a class="notlink">
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-05-05</p>
-  </a>
+            <! -- 添加捐赠图标 -->
+<div class="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="document.getElementById('donateModal').style.display = 'block'" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">打赏</a></p>
+        <br>
+    </div>
+    <div id="donateModal" class="modal" style="display: none;position: fixed;z-index: 1000;margin-left:-160px;margin-top:-200px;padding: 10px;left: 50%;top: 50%;width: 320px;height: 380px;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.6);">
+        <img src="https://cocosongying.github.io/img/wechatpay.jpeg" id="myImg" width="298" height="298" style="border:1px solid #d3d3d3;margin-bottom: 12px;">
+        <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="document.getElementById('donateModal').style.display='none'" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">关闭</a></p>
+    </div>
 </div>
-
+<! -- 添加捐赠图标 -->
           
         
-          
-            
-  
-  <div class="new-meta-item category">
-    <a href="/hexo/categories/实用教程/" rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>实用教程</p>
-    </a>
-  </div>
-
-
-          
         
-          
-            
-
-          
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/hexo/p/489f.html" rel="prev" title="博客个性化-一言">
+                                    
+                                        博客个性化-一言
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/hexo/tags/Hexo/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>Hexo</a> <a class="tag" href="/hexo/tags/个性化/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>个性化</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
         
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p><a href="https://hitokoto.cn/" target="_blank" rel="noopener">一言网(Hitokoto.cn)</a>创立于 2016 年，隶属于萌创 Team，目前网站主要提供一句话服务。一言指的就是一句话，可以是动漫中的台词，也可以是网络上的各种小段子。或是感动，或是开心，有或是单纯的回忆。来到这里，留下你所喜欢的那一句句话，与大家分享，这就是一言存在的目的。</p>
-      
-        <div class="readmore">
-          <a href="/hexo/p/489f.html" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Hexo</a>
-        
-          <a href="/hexo/tags/个性化/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>个性化</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <article class="post reveal ">
+      </section>
+    </article>
   
 
-
-  <section class="meta">
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/hexo/p/d67b.html">
-      博客个性化-今日诗词
-    </a>
-  </h2>
-
-
-      
-      <div class="new-meta-box">
-        
-          
-        
-          
-            
-  <div class="new-meta-item author">
-    <a href="https://cocosongying.github.io/hexo" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>cocosongying</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class="notlink">
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-05-04</p>
-  </a>
-</div>
-
-          
-        
-          
-            
   
-  <div class="new-meta-item category">
-    <a href="/hexo/categories/实用教程/" rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>实用教程</p>
-    </a>
-  </div>
+    <!-- 显示推荐文章和评论 -->
 
 
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p><a href="https://www.jinrishici.com/" target="_blank" rel="noopener">今日诗词(https://www.jinrishici.com/)</a> API 是一个可以返回一句古诗词名句的接口。它可以通过图片和 JSON 格式调用。今日诗词 API 根据不同地点、时间、节日、季节、天气、景观、城市进行智能推荐。</p>
-      
-        <div class="readmore">
-          <a href="/hexo/p/d67b.html" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Hexo</a>
-        
-          <a href="/hexo/tags/个性化/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>个性化</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class="post-wrapper">
-            <article class="post reveal ">
-  
-
-
-  <section class="meta">
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/hexo/p/3eeb.html">
-      Hello World
-    </a>
-  </h2>
-
-
-      
-      <div class="new-meta-box">
-        
-          
-        
-          
-            
-  <div class="new-meta-item author">
-    <a href="https://cocosongying.github.io/hexo" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>cocosongying</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class="notlink">
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-03-26</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class="new-meta-item category">
-    <a href="/hexo/categories/Study/" rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Study</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>Hexo</a>
-        
-          <a href="/hexo/tags/MaterialX/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>MaterialX</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
 
   
 
 
-	
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '博客个性化-打赏按钮',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class="l_side">
   
@@ -711,7 +453,7 @@
       var c=document.getElementById("qrcode");
       var ctx=c.getContext("2d");
       var qr=new Image();
-      qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACH0lEQVR42u3aQY6DMBAEwPz/09lrpF1Itw3SYpdPEQHs4jCaGfv1isf7Y3xeuePOo/svGBgYGI9lvE/H0T2/33DH+5NnMTAw9mEcTX/+O3mqDaB5sMbAwMDIGUmSl4RRDAwMjDsY+XKjpWBgYGCcMmaCYL6gf1GLY2BgPJAxU1je/fuW/Q0MDIxHMd7lmEnj8sXVq8LAwFiakQe4nJcnl/kWafRpMDAwFmW0pWNbcCZFb9Ke+wLDwMBYmnFVHXzV58hbfn9cwcDA2JiRl6bzG5ltqMXAwNiBkQS1dukzm5HtMQsMDIydGWOLOw+U+ZV89ugxDAyMhzPmtxhnkr/8DUURi4GBsShjPnSObX/mm5dJaMbAwFiVMdbeGjs2kTyVL/3LaREMDIzlGG3ba/5Y2HniWAd9DAyMDRgzZepYYB1rqB1iMDAwlmYkf7fNsqKV39bZ5/dgYGBsw0hCcHs4o23AtSEeAwNjB0YeWNuksN1IaFNJDAyMfRh5Sjffyp9JNL+sAQMDYwNGm7pFheVQwB1s/2FgYGzGGGuKjYXUdg1RbouBgbEQ412OFvmKx9jBMgwMjB0Y7TTJZPOJY3tADQMDYwdGEmTz46d5ME3AxffGwMDYgNFuarbNtbFDq0XJjYGBgVG22+rjp3FoxsDAwLg24CYpZrv0w9kxMDA2YCRFbHsq9qr7o5CNgYGxNGNmizFvk4013fJNTQwMjEUZP6pKS6kzIEieAAAAAElFTkSuQmCC';
+      qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3aS46DMBAFwNz/0swBItB7bTISplhFEwdcLHrcn88nvo6vK19ztv772+v733BhYGA8lnFcXvkWzzaRr0mee0rFwMB4ASMJhdfbyjd3/fQkWGNgYGAkt1sJjrOAjoGBgbEScGcJcP4XDAwMjDyJvQ6aSUjNv/1hLo6BgfFARl51///PP+lvYGBgPIpxlNfKtmaNzGhXGBgYWzNmieisVdA2Mtv9YGBg7MqYpalJ6MzXtOMaxbkVAwNjC8asHJ8f+9qVs5IfBgbG3ox2qCsf85pV/mbBHQMDAyOBrae1ycHx9CkYGBhbM2bHu7asNnsROQwDA2NvRt5WbGErgxptQRADA2NvxiywzkpsKwG6+CeBgYHxAkadOpahNjqrxsfKojuKgYHxWMZ627IN07OGaNSDxcDA2JSxMtrVhshko/mhM8JgYGBsx2gDbjuW0W4uOThiYGC8h5EExJVSWp7c5nuI6oUYGBjbMeqfxSvb4bP89WFgYLyN0SaTsysv4dUjGhgYGK9hJNtNil9JyyEPu1HQx8DAeAHjriNgUqRLXkqNwcDA2JQxO9j9LjVthzkwMDDewGgHKdoHt63Q9ohZYzAwMB7LyAtkeUDMM83ZiFhxawwMjI0YeeBrY3Y+5rWyWwwMDIz1duPst9d3wMDAwLirDdk2PvM1xbAFBgbGFox2kCs59uX3yVPc0/tgYGBszWhTx1n7cP1AecNOMDAwnsf4A3n1S6kwTRHmAAAAAElFTkSuQmCC';
       qr.onload = function() {
         ctx.drawImage(qr,100,0,100,100);
       }
@@ -727,6 +469,20 @@
           
           
             
+  <section class="widget toc-wrapper">
+    
+<header class="pure">
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <div class="wrapper"><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class="content pure">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#赞赏码"><span class="toc-text">赞赏码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#示例"><span class="toc-text">示例</span></a></li></ol>
+    </div>
+  </section>
+
 
           
         
@@ -838,14 +594,6 @@
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
-
-
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
 
 
       <script>setLoadingBarProgress(60);</script>

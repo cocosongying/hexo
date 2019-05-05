@@ -64,6 +64,26 @@
 <div class="menu navgation">
   <ul class="h-list">
     
+      
+        <li>
+          <a class="nav home" href="https://cocosongying.github.io/" rel="nofollow" id="https:cocosongying.github.io">
+            <i class="fas fa-home fa-fw"></i>&nbsp;主页
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/hexo/" id="hexo">
+            <i class="fas fa-grin fa-fw"></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/hexo/archives/" rel="nofollow" id="hexoarchives">
+            <i class="fas fa-archive fa-fw"></i>&nbsp;归档
+          </a>
+        </li>
+      
+    
   </ul>
 </div>
 
@@ -382,94 +402,6 @@
     <div class="new-meta-box">
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-05-05T17:18:32+08:00">
-  <a class="notlink">
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2019年5月5日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-  <div class="new-meta-item meta-tags">
-    <a class="tag" href="javascript:void(0)" id="poster">
-      <i class="fas fa-camera" aria-hidden="true"></i>
-      海报
-    </a>
-    <script type="text/javascript">
-      function downloadPoster(selector) {
-        //var canvas = document.querySelector(selector);
-        var canvas = document.getElementById(selector);
-        var url = canvas.toDataURL('image/png')
-        var a = document.createElement('a')
-        var event = new MouseEvent('click')
-        var name = window.location.href.replace(".html","").split("/");
-        a.download = 'cocosongying_' + name[name.length-1];
-        a.href = url;
-        //a.dispatchEvent(event);
-        a.dataset.downloadurl = ['image/png', a.download, a.href].join(':');
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-      }
-
-      document.getElementById('poster').onclick = function() {
-        var url = window.location.href;
-        document.getElementById('myModal').style.display = "block";
-        var c=document.getElementById("myCanvas");
-        var ctx=c.getContext("2d");
-        var img=new Image();
-        img.src="/hexo/img/post_bg_1.jpeg";
-        var qr=new Image();
-        qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACK0lEQVR42u3aQZIiMQwEwPn/p9nrXOitkmEiWp0+EWDaTg5ClvXzE4/Xr5HM+T0z+Va+ytHAwMC4LeN1Od4tkLyTbzRZ990cDAyM5zCSUJjgk81dr54EawwMDIyW0QbH5LsYGBgYJ4wkjLZp3/U7GBgYGPkhNi/AXT8h+fSLZ3EMDIwbMvKq+9+//sr9BgYGxq0Yr3KcbGt2kRntCgMDYzUjD3BtgaxNDdtmCwwMjKcx2mNqEjrzOW27RpHDYmBgrGDMAmJbdDspzyUlPwwMjN2MWdtEu6Hzuln0J4GBgbGU0V5bzq48T54f5YEYGBirGeftX9fp2nUq2bZ0/CcEY2BgLGW0rVon5f5Zg8XwLI6BgbGIkZe9zktsbevGSfqIgYHxNEa70ZY0u1KNLjUxMDBWMPKkbRZ2E+TJ1SkGBsYTGG2j2HmDRUv6AAYDA2MFI3n0SbJ4crVQpLAYGBhLGe0CLbI93LZJZ/0PgIGBcUNGHtSSxWaBOw+vGBgYT2bMWsHyFq78J8g/jWqHGBgY6xhtCWzW/jUbR7evGBgY6xjDit0oaLbUohUMAwNjEeNVjraRoj2aXv+sUVKIgYGxjjFLzj51d5q3axz1jGBgYKxg5EF2tq38smGWqmJgYDyH8anAl4Dbxo5oJgYGBkZ8iM1JbUmuaLbAwMB4PKNN49pgnc952zOCgYGxlNE2cuWxbhZG69Y0DAyM1Yz26Di7SkwKbd9bHQMD47aMf6jcvCoy1FNzAAAAAElFTkSuQmCC';
-        
-        var title = '博客个性化-今日诗词';
-        var desc = '如何在博客中使用今日诗词';
-        var fontSize = 20;
-        ctx.textAlign ='center'; //水平对齐
-        var canvasWidth = 298;
-        var canvasHeight = 480;
-        var textareaWidth = Math.ceil(canvasWidth/fontSize); //画布宽度除以字号
-        var text = [];//存放切割后的内容
-        while (desc.length > 0) {
-          text.push(desc.substr(0, textareaWidth ))
-          desc = desc.substr(textareaWidth, desc.length)
-        }
-
-        img.onload = function() {
-          ctx.drawImage(img,0,0,298,480);
-          ctx.drawImage(qr,100,360,100,100);
-
-          ctx.font="24px Arial";
-          ctx.fillText(title, canvasWidth/ 2, 50)
-
-          ctx.font="16px Arial";
-          //设置文本垂直居中
-          for (let i = 0; i < text.length; i++) {
-            ctx.fillText(text[i], canvasWidth/ 2, 100 + i * 20);
-          }
-
-          var imgSrc = c.toDataURL('image/png');
-          c.style.display="none";
-          var myImg = document.getElementById('myImg');
-          myImg.setAttribute('src', imgSrc);
-        }
-        return false;
-      }
-    </script>
-  </div>
-  <div id="myModal" class="modal" style="display: none;position: fixed;z-index: 1000;margin-left:-160px;margin-top:-280px;padding: 10px;left: 50%;top: 50%;width: 320px;height: 566px;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.6);">
-    <canvas id="myCanvas" width="298" height="480" style="border:1px solid #d3d3d3;margin-bottom: 12px;">您的浏览器不支持 HTML5 canvas 标签。</canvas>
-    <img src id="myImg" width="298" height="480" style="border:1px solid #d3d3d3;margin-bottom: 12px;">
-    <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="document.getElementById('myModal').style.display='none'" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">关闭</a></p>
-  </div>
-
-
-        
-      
-        
           
   
   <div class="new-meta-item meta-tags"><a class="tag" href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/hexo/tags/个性化/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>个性化</p></a></div>
@@ -686,7 +618,7 @@
         
           <li><a class="flat-box" title="/hexo/categories/Study/" href="/hexo/categories/Study/"><div class="name">Study</div><div class="badge">(1)</div></a></li>
         
-          <li><a class="flat-box" title="/hexo/categories/实用教程/" href="/hexo/categories/实用教程/"><div class="name">实用教程</div><div class="badge">(2)</div></a></li>
+          <li><a class="flat-box" title="/hexo/categories/实用教程/" href="/hexo/categories/实用教程/"><div class="name">实用教程</div><div class="badge">(3)</div></a></li>
         
       </ul>
     </div>
