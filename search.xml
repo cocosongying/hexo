@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>实用工具-线上代码美化</title>
+      <link href="/hexo/p/a19a.html"/>
+      <url>/hexo/p/a19a.html</url>
+      
+        <content type="html"><![CDATA[<p>推荐一款在线代码美化工具 <a href="https://carbon.now.sh/" target="_blank" rel="noopener">carbon</a></p><a id="more"></a><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://carbon.now.sh/" target="_blank" rel="noopener">carbon</a> 是一个在线生成美化不同风格的代码图片的工具。</p><p>多种丰富代码样式任意选择，不同语言高亮颜色随之变化，还可以自定义背景颜色，字体大小等，既可以在线预览，也可以导出图片。</p><h2 id="一睹为快"><a href="#一睹为快" class="headerlink" title="一睹为快"></a>一睹为快</h2><fancybox><br><img src="/hexo/p/a19a/img_carbon_1.png" alt><br></fancybox><h2 id="官方示例"><a href="#官方示例" class="headerlink" title="官方示例"></a>官方示例</h2><fancybox><br><img src="/hexo/p/a19a/img_carbon_2.png" alt><br></fancybox><p>点击 <a href="https://carbon.now.sh/" target="_blank" rel="noopener">carbon</a> 快速开始使用</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>实用工具-线上流程图</title>
       <link href="/hexo/p/db17.html"/>
       <url>/hexo/p/db17.html</url>

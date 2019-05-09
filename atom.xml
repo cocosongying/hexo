@@ -6,7 +6,7 @@
   <link href="/hexo/atom.xml" rel="self"/>
   
   <link href="https://cocosongying.github.io/hexo/"/>
-  <updated>2019-05-09T14:54:59.061Z</updated>
+  <updated>2019-05-09T15:28:51.245Z</updated>
   <id>https://cocosongying.github.io/hexo/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用工具-线上代码美化</title>
+    <link href="https://cocosongying.github.io/hexo/p/a19a.html"/>
+    <id>https://cocosongying.github.io/hexo/p/a19a.html</id>
+    <published>2019-05-09T14:59:03.000Z</published>
+    <updated>2019-05-09T15:28:51.245Z</updated>
+    
+    <content type="html"><![CDATA[<p>推荐一款在线代码美化工具 <a href="https://carbon.now.sh/" target="_blank" rel="noopener">carbon</a></p><a id="more"></a><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://carbon.now.sh/" target="_blank" rel="noopener">carbon</a> 是一个在线生成美化不同风格的代码图片的工具。</p><p>多种丰富代码样式任意选择，不同语言高亮颜色随之变化，还可以自定义背景颜色，字体大小等，既可以在线预览，也可以导出图片。</p><h2 id="一睹为快"><a href="#一睹为快" class="headerlink" title="一睹为快"></a>一睹为快</h2><fancybox><br><img src="/hexo/p/a19a/img_carbon_1.png" alt><br></fancybox><h2 id="官方示例"><a href="#官方示例" class="headerlink" title="官方示例"></a>官方示例</h2><fancybox><br><img src="/hexo/p/a19a/img_carbon_2.png" alt><br></fancybox><p>点击 <a href="https://carbon.now.sh/" target="_blank" rel="noopener">carbon</a> 快速开始使用</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;推荐一款在线代码美化工具 &lt;a href=&quot;https://carbon.now.sh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;carbon&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用工具" scheme="https://cocosongying.github.io/hexo/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="美化" scheme="https://cocosongying.github.io/hexo/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>实用工具-线上流程图</title>
