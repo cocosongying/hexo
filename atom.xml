@@ -6,7 +6,7 @@
   <link href="/hexo/atom.xml" rel="self"/>
   
   <link href="https://cocosongying.github.io/hexo/"/>
-  <updated>2019-05-09T15:28:51.245Z</updated>
+  <updated>2019-05-09T15:48:43.403Z</updated>
   <id>https://cocosongying.github.io/hexo/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo发布博客引用本地图片</title>
+    <link href="https://cocosongying.github.io/hexo/p/277c.html"/>
+    <id>https://cocosongying.github.io/hexo/p/277c.html</id>
+    <published>2019-05-09T15:35:33.000Z</published>
+    <updated>2019-05-09T15:48:43.403Z</updated>
+    
+    <content type="html"><![CDATA[<p>介绍如何用 Hexo 发布博客时引用本地图片</p><a id="more"></a><h2 id="开启配置"><a href="#开启配置" class="headerlink" title="开启配置"></a>开启配置</h2><p>修改 _config.yml 配置文件 post_asset_folder 项为 true 。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure><p>使用以下命令创建标题为 Title 的博客</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;Title&quot;</span><br></pre></td></tr></table></figure><p>在 source/_post 文件夹下生成一个 Title.md 的文件和一个 Title 文件夹</p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure><p>之后就可以正常引用图片了，如果配置了 permalink ，需要根据实际情况修改下面的引用路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](Title/1.jpg)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;介绍如何用 Hexo 发布博客时引用本地图片&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用教程" scheme="https://cocosongying.github.io/hexo/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Hexo" scheme="https://cocosongying.github.io/hexo/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>实用工具-线上代码美化</title>

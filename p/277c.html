@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>所有分类 | 磨叽熊猫</title>
+  <title>Hexo发布博客引用本地图片 | 磨叽熊猫</title>
   
   
 
@@ -48,7 +48,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class="cover category half">
+    <cover class="cover post half">
       
         
   <a href="/hexo/"><h1 class="title">磨叽熊猫</h1></a>
@@ -190,52 +190,204 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
+      <div class="l_main">
+  
+
+  
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
       
-<div class="l_main">
-  
+
+
+  <section class="meta">
     
-      <section class="post-list">
-        <div class="post-wrapper">
-          <article id="archive-page" class="post article white-box">
-            <section class="archive">
-              <div class="archive-item archive-year mark">
-                <h2>所有分类</h2>
-                <hr>
-              </div>
-              <div class="archive-item archive-post mark">
-                
-                  
-                    <a class href="/hexo/categories/Study/">
-                      <time><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Study</time>
-                      <span class="title">
-                        (1)
-                      </span>
-                    </a>
-                  
-                    <a class href="/hexo/categories/实用工具/">
-                      <time><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;实用工具</time>
-                      <span class="title">
-                        (2)
-                      </span>
-                    </a>
-                  
-                    <a class href="/hexo/categories/实用教程/">
-                      <time><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;实用教程</time>
-                      <span class="title">
-                        (8)
-                      </span>
-                    </a>
-                  
-                
-              </div>
-              <br>
-              
-            </section>
-          </article>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/hexo/p/277c.html">
+        Hexo发布博客引用本地图片
+      </a>
+    </h1>
+  
+
+
+      
+      <div class="new-meta-box">
+        
+          
+        
+          
+            
+  <div class="new-meta-item author">
+    <a href="https://cocosongying.github.io/hexo" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>cocosongying</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class="notlink">
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-05-09</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class="new-meta-item category">
+    <a href="/hexo/categories/实用教程/" rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>实用教程</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class="notlink">
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <p>介绍如何用 Hexo 发布博客时引用本地图片</p>
+<a id="more"></a>
+<h2 id="开启配置"><a href="#开启配置" class="headerlink" title="开启配置"></a>开启配置</h2><p>修改 _config.yml 配置文件 post_asset_folder 项为 true 。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
+<p>使用以下命令创建标题为 Title 的博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;Title&quot;</span><br></pre></td></tr></table></figure>
+<p>在 source/_post 文件夹下生成一个 Title.md 的文件和一个 Title 文件夹</p>
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p>之后就可以正常引用图片了，如果配置了 permalink ，需要根据实际情况修改下面的引用路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](Title/1.jpg)</span><br></pre></td></tr></table></figure>
+
         </div>
-      </section>
-    
+        
+          
+
+
+  <section class="meta" id="footer-meta">
+    <hr>
+    <div class="new-meta-box">
+      
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/hexo/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>Hexo</p></a></div>
+
+
+        
+      
+    </div>
+  </section>
+
+
+          
+            <! -- 添加捐赠图标 -->
+<div class="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="document.getElementById('donateModal').style.display = 'block'" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">打赏</a></p>
+        <br>
+    </div>
+    <div id="donateModal" class="modal" style="display: none;position: fixed;z-index: 1000;margin-left:-160px;margin-top:-200px;padding: 10px;left: 50%;top: 50%;width: 320px;height: 380px;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.6);">
+        <img src="https://cocosongying.github.io/img/wechatpay.jpeg" id="myImg" width="298" height="298" style="border:1px solid #d3d3d3;margin-bottom: 12px;">
+        <p style="margin:5px auto;"><a href="javascript:void(0)" onclick="document.getElementById('donateModal').style.display='none'" style="display:block;width:100px;padding:10px;background-color:#E74851;color:#fff;text-align:center;margin:0px auto;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;">关闭</a></p>
+    </div>
+</div>
+<! -- 添加捐赠图标 -->
+          
+        
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/hexo/p/a19a.html" rel="prev" title="实用工具-线上代码美化">
+                                    
+                                        实用工具-线上代码美化
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/hexo/tags/美化/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>美化</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'Hexo发布博客引用本地图片',
+      tools: true
+    }
+  </script>
+
 
 </div>
 <aside class="l_side">
@@ -301,7 +453,7 @@
       var c=document.getElementById("qrcode");
       var ctx=c.getContext("2d");
       var qr=new Image();
-      qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJ0lEQVR42u3aS46DQAwFwNz/0sw6iiDPdhiJ7mIVzSTQxcLy7/WKr+PjOvv753eSO3/e7XXHhYGB8VhGcpSjeOUv4mevCQMDYwNGEgrz0DkJoMlzMTAwMCaM69B5xks+Y2BgYOSMs8A6D8TXPAwMDIxJuLwOvnk4/qdaHAMD44GMSWF59+db5hsYGBiPYvTa/deJ3XWAzn9bOBUGBsbSjHkrrZrkVYvYPPXEwMBYm5EvaeWNubwBVw3lzUwWAwPjsYzeiLE6EuiljMkZ3jJcDAyMRRl5Gdk7XDXqVwcAGBgYOzCqRWPy4HzB4vrphaYeBgbG0ow8XE6K0gmsEIIxMDCWZvSCXRJ25wsW+Z0xMDD2YSQtsF5nfjK7KA87MTAwlmNUW2PRklZrDJAfPeoXYmBgbMDotemryN6yBQYGxj6MScirNtTuWK34sjOCgYGxBCMfJSaJY76ukXf1Cw1BDAyMDRjVLKvaJqsOSqtLGBgYGPswCj8bDz4nPAwMjJ0ZvTWLXustae39bIEVAwNjCUZSgvZSt14ZXA7lGBgYmzHmyxZ5SK024L6khhgYGMsxjuLVI02acVHgxsDAWJoxCXbVpa7eyld1/QIDA2NVRn7EXpI3//6P3zQGBsZjGXnq1hsn9FYr8tNiYGBg9B5TXeOYDFMxMDAwktK0t9TVC9yn4wEMDIylGfeNJPMhQUI6/S8GBsbSjF7pWB155kfMG3AYGBgbMP4AdRtLqR/C5zAAAAAASUVORK5CYII=';
+      qr.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIklEQVR42u3aUQ4CIQxFUfe/6XEBRua+Fk2mXL6MThgOJk1peb3wuD4Gf+bb85+/ruffMGTIkPFYxrUc315AvuELJe+92UoZMmQcwCChcL0svrj120mwliFDhoyUkQZHElhlyJAhYxeDH1M76aYMGTJk8EMsT+DWM5Bff3gWlyFDxgMZvOr+/88/6W/IkCHjUYwrHLvCK29kolXJkCFjNIMHuE4yV2tkpuuRIUPGVEatMRnvU6MAhzZahgwZoxkkOUsLc+mcu0p+MmTImM2ovaATcGsJ6E0jU4YMGUMZnQJZWuhPL1KQNFGGDBknMEiwq5XMSAthF0yGDBmzGZ22Yh/GATeHWBkyZIxm8GJ9J3XjQZa3BG6CrwwZMg5j1AIxJ6GKIF+hDBkyDmCkh1teYiOXwPhlCxkyZJzD2NVoJCGSX+Pg/wA6i8uQIePhDD41aRiQwQN9vJUyZMg4gLErTay1CvhVj6CRKUOGjNGMXYlgWpJLC3wyZMg4mcEXlI5O4L5pecqQIeMwRi3t41codhX44s6GDBkyRjB4olY7mvI2QIyRIUPGUEYtsUuTuTRCpgmiDBkyZjNqydmucEmamun1CxkyZExl8AIZb2fWtoM0EuKdliFDxiBGP/CRZaVrCJ6UIUOGjFLhrHP0jTdFhgwZMkpXx9KDaNpyCC5byJAhYwQjvVrBAbV50pllyJAxm5EeHWvtQ1JoqzU7ZciQMZrxBkdrA/HciO7nAAAAAElFTkSuQmCC';
       qr.onload = function() {
         ctx.drawImage(qr,100,0,100,100);
       }
@@ -316,6 +468,20 @@
           
           
             
+  <section class="widget toc-wrapper">
+    
+<header class="pure">
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <div class="wrapper"><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class="content pure">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#开启配置"><span class="toc-text">开启配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装插件"><span class="toc-text">安装插件</span></a></li></ol>
+    </div>
+  </section>
+
 
           
         

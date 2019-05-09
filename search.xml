@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hexo发布博客引用本地图片</title>
+      <link href="/hexo/p/277c.html"/>
+      <url>/hexo/p/277c.html</url>
+      
+        <content type="html"><![CDATA[<p>介绍如何用 Hexo 发布博客时引用本地图片</p><a id="more"></a><h2 id="开启配置"><a href="#开启配置" class="headerlink" title="开启配置"></a>开启配置</h2><p>修改 _config.yml 配置文件 post_asset_folder 项为 true 。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure><p>使用以下命令创建标题为 Title 的博客</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;Title&quot;</span><br></pre></td></tr></table></figure><p>在 source/_post 文件夹下生成一个 Title.md 的文件和一个 Title 文件夹</p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure><p>之后就可以正常引用图片了，如果配置了 permalink ，需要根据实际情况修改下面的引用路径</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](Title/1.jpg)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>实用工具-线上代码美化</title>
       <link href="/hexo/p/a19a.html"/>
       <url>/hexo/p/a19a.html</url>
